@@ -29,7 +29,7 @@ SearchThread :: SearchThread(){
 
 }
 
-SearchThread :: ~ SearchThread(){
+SearchThread :: ~SearchThread(){
 
 }
 int SearchThread :: StartSearchTxtFiles(string filepath){
