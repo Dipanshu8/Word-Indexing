@@ -12,8 +12,8 @@ class SearchThread{
 
 	public: SearchThread(); 
 		~SearchThread();
-                /* This searches .txt file in the directory and saves the result in queue*/ 
+                // This searches .txt file in the directory and saves the result in queue
 		int StartSearchTxtFiles(string);
 	        static int callback(const char *fpath, const struct stat *sb, int typeflag);
 };
-#endif  /*SEARCHTHREAD_H*/
+#endif
