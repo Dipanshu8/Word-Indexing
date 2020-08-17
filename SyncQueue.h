@@ -11,16 +11,19 @@ using namespace std;
 class SyncQueue{
 	public:  SyncQueue();
 	        ~SyncQueue();
-                /*writes filename in Queue */  
+                //writes filename in Queue
+	
 		int AddFileNameinQ(string filename); 
 
-                /*reads the filename from Queue and returns the filename */
+                //reads the filename from Queue and returns the filename
+	
 		string GetFilefrmQ(void);
                        
-                /*returns nubmer of files present queue*/ 
+                //returns nubmer of files present queue
+	
 	        int GetCount();
                 
-                /*returns number of files processed by queue*/
+                //returns number of files processed by queue
                 int GetFileCount();
                                 
    
