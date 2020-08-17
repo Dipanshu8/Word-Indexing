@@ -33,4 +33,4 @@ class SyncQueue{
                 //store number of files processed by queue       
                 int CountFileSize; 
 };
-#endif /* QUEUE_H */
+#endif 
