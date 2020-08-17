@@ -7,7 +7,7 @@ SyncQueue :: SynQueue(){
 SyncQueue :: ~SynQueue(){
 }
 
-//This function add filepath to synchornized queue//
+//This function add filepath to synchornized queue
 void SyncQueue :: AddFileNameinQ(string filepath){
     MutexObject.lock();
     Queue.push(filepath);
@@ -15,7 +15,7 @@ void SyncQueue :: AddFileNameinQ(string filepath){
     MutexObject.unlock();
 }
 
-//This function read the filepath from synchronized queue//
+//This function read the filepath from synchronized queue
 string SyncQueue :: GetFilefrmQ(){
     string filename="";
     MutexObject.lock();
@@ -27,14 +27,14 @@ string SyncQueue :: GetFilefrmQ(){
 return filename;
 }
 
-//This function returns the size of synchronized queue This check is required before fetching filepath from queue//
+//This function returns the size of synchronized queue This check is required before fetching filepath from queue
 int SyncQueue :: GetCount(){
     int CountSize = 0;
     CountSize=Queue.size();
 return CountSize;
 }
 
-//This function returns the total number of file processed by synchornized queue//
+//This function returns the total number of file processed by synchornized queue
 
 int SyncQueue :: GetFileCount(){
     return CountFileSize;
